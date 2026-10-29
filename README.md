@@ -4,6 +4,8 @@ A small background tool that automatically mutes the Spotify desktop app while a
 
 > **Unofficial.** Not affiliated with or endorsed by Spotify. It does not block ads; it only mutes Spotify's audio during them. For personal use. Check Spotify's terms of service yourself.
 
+ ![Demo: Spotify is muted while an ad plays](demo.png)
+
 ## How it works
 
 During ads, Spotify's window title is not "Artist - Song" (for example it shows `Listen to music, ad-free.`). The script checks the title every half second. If it matches a known ad title, it mutes Spotify's own audio session through the Windows audio API. Your system volume is never changed, so there is nothing to restore afterwards.
